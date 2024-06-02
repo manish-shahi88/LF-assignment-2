@@ -1,33 +1,35 @@
-// const hamburger = document.querySelector(".hamburger")
-// const navMenu = document.querySelector(".navbar__menu")
+const hamburger = document.getElementById("hamburger")
+const navMenu = document.querySelector(".navbar__menu")
 
-// hamburger.addEventListener("click",()=>{
-//     hamburger.classList.toggle("active")
-//     navMenu.classList.toggle("active")
-// })
+hamburger.addEventListener("click",()=>{
+    hamburger.classList.toggle("active")
+    navMenu.classList.toggle("active")
+})
 
+const icon = document.getElementById("icon");
+const iconTwo = document.getElementById("icon-two")
 
-// // darkmode
-// document.addEventListener("DOMContentLoaded", function() {
-//     const sun_icon = document.getElementById("icon");
-//     sun_icon.onclick = function() {
-//         document.body.classList.toggle("dark-theme");
-//     }
-// });
+icon.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default action
+    document.body.classList.toggle("dark-theme");
 
-document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.querySelector(".hamburger");
-    const navMenu = document.querySelector(".navbar__menu");
-    const sunIcon = document.getElementById("icon");
-
-    // Toggle hamburger menu
-    hamburger.addEventListener("click", () => {
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    });
-
-    // Toggle dark/light mode
-    sunIcon.addEventListener("click", () => {
-        document.body.classList.toggle("dark-theme");
-    });
+    if(document.body.classList.contains("dark-theme")){
+        icon.src = "./assets/dark-mode.png"
+    }
+    else{
+        icon.src = "./assets/sun.png"
+    }
 });
+
+iconTwo.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default action
+    document.body.classList.toggle("dark-theme");
+
+    if(document.body.classList.contains("dark-theme")){
+        iconTwo.src = "./assets/sun.png"
+    }
+    else{
+        iconTwo.src = "./assets/dark-mode.png"
+    }
+});
+

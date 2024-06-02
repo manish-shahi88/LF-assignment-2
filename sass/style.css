@@ -1,12 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
+  --navbar-color: #FFFFFF;
   --main-bg-color: #FFFFFF;
   --main-bg-light-gray-color: #F4F6FB;
+  --main-text-color: #000000;
 }
 
 .dark-theme {
-  --main-bg-color: #000000;
+  --navbar-color: #000000;
+  --main-bg-color: #050519;
   --main-bg-light-gray-color: #282C34;
+  --main-text-color: #FFFFFF;
 }
 
 body {
@@ -19,10 +23,12 @@ header {
   max-width: 1440px;
   max-height: 900px;
   margin-bottom: 150px;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
 
 .navbar {
-  background-color: var(--main-bg-color);
+  background-color: var(--navbar-color);
   padding: 24px 140px;
   max-height: 88px;
   box-sizing: border-box;
@@ -38,7 +44,7 @@ header {
   margin-left: 56px;
 }
 .navbar__menu .navbar__item a {
-  color: #000000;
+  color: var(--main-text-color);
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -66,7 +72,7 @@ ul {
 }
 
 .hamburger__btn {
-  background-color: var(--main-bg-light-gray-color);
+  background-color: #F4F6FB;
   height: 28px;
   width: 78px;
   border-radius: 30px;
@@ -81,7 +87,6 @@ ul {
 }
 
 .main-content {
-  background-color: var(--main-bg-color);
   margin-top: 70px;
   display: flex;
   justify-content: center;
@@ -131,7 +136,7 @@ ul {
 .content .content__buttons .content__button-hello {
   width: 167px;
   height: 40px;
-  color: var(--main-bg-color);
+  color: #FFFFFF;
   font-size: 14px;
   border-radius: 43px;
   border: none;
@@ -150,7 +155,7 @@ ul {
   font-size: 14px;
   border-radius: 43px;
   border: none;
-  background-color: var(--main-bg-light-gray-color);
+  background-color: #F4F6FB;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,11 +172,29 @@ ul {
   gap: 40px;
   cursor: pointer;
 }
+.content .content__social-links .content__social-icon {
+  width: 45px;
+  height: 45px;
+  background-color: #F4F6FB;
+  border-radius: 50%;
+  position: relative;
+}
+.content .content__social-links .content__social-icon:hover {
+  box-shadow: 0 0 5px 3px #aaaaaa;
+  transition: 0.3s ease;
+}
+.content .content__social-links .content__social-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 .section {
   width: 100%;
   padding: 5rem 0;
   background-color: var(--main-bg-light-gray-color);
+  color: var(--main-text-color);
 }
 
 .container {
@@ -226,7 +249,7 @@ ul {
   margin-top: 40px;
   width: 167px;
   height: 40px;
-  color: var(--main-bg-color);
+  color: #FFFFFF;
   font-size: 14px;
   border-radius: 43px;
   border: none;
@@ -236,6 +259,7 @@ ul {
 .application {
   margin-bottom: 2rem;
   background-color: var(--main-bg-color);
+  color: var(--main-text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -257,7 +281,7 @@ ul {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  box-shadow: 0 0 5px 5px var(--main-bg-light-gray-color);
+  box-shadow: 0 0 5px 5px #F4F6FB;
   position: relative;
 }
 .application .application__details .application__content .application__content-image:hover {
@@ -273,7 +297,7 @@ ul {
 }
 .application button {
   width: 80%;
-  background-color: var(--main-bg-light-gray-color);
+  background-color: #F4F6FB;
   border: none;
   border-radius: 45px;
   padding: 8px 0;
@@ -289,6 +313,7 @@ ul {
 
 .footer {
   background-color: var(--main-bg-light-gray-color);
+  color: var(--main-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,7 +333,7 @@ ul {
 .footer .footer__container .footer__right button {
   width: 167px;
   height: 40px;
-  color: var(--main-bg-color);
+  color: #FFFFFF;
   font-size: 14px;
   border-radius: 43px;
   border: none;

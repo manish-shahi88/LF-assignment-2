@@ -13,12 +13,17 @@ $description-color: #2C2C2E
 $light-blue-color: #282C34
 
 :root 
+    // --main-bg-color: #{$light-primary-color}
+    --navbar-color: #{$light-primary-color}
     --main-bg-color: #{$light-primary-color}
     --main-bg-light-gray-color: #{$light-background-color}
+    --main-text-color: #{$dark-primary-color}
 
 .dark-theme
-    --main-bg-color: #{$dark-primary-color}
+    --navbar-color: #{$dark-primary-color}
+    --main-bg-color: #{$responsive-bg-color}
     --main-bg-light-gray-color: #{$light-blue-color}
+    --main-text-color: #{$light-primary-color}
 
 @mixin button-styles($btn-bg-color,$color)
     width: 167px
@@ -47,10 +52,11 @@ header
     max-width: 1440px
     max-height: 900px
     margin-bottom: 150px
-    // background-color: var(--main-bg-color) 
+    background-color: var(--main-bg-color) 
+    color: var(--main-text-color)
 
 .navbar
-    background-color: var(--main-bg-color)
+    background-color: var(--navbar-color)
     padding: 24px 140px
     max-height: 88px
     box-sizing: border-box
@@ -63,7 +69,8 @@ header
     .navbar__item
         margin-left: 56px
         a   
-            color: $dark-primary-color
+            // color: $dark-primary-color
+            color: var(--main-text-color)
             text-decoration: none
             font-size: 16px
             font-weight: 500
@@ -100,7 +107,7 @@ ul
     display: flex
     gap: 24px
 .hamburger__btn 
-    background-color: var(--main-bg-light-gray-color)
+    background-color: $light-background-color
     height: 28px
     width: 78px
     border-radius: 30px
@@ -114,7 +121,7 @@ ul
 
 // content section
 .main-content
-    background-color: var(--main-bg-color)
+    // background-color: var(--main-bg-color)
     margin-top: 70px
     display: flex
     justify-content: center
@@ -155,12 +162,12 @@ ul
         display: flex
         gap: 30px
         .content__button-hello
-            @include button-styles($blue-button-color,var(--main-bg-color))
+            @include button-styles($blue-button-color,$light-primary-color)
             &:hover
                 @include button-hover()
             
         .content__button-download-cv
-            @include button-styles(var(--main-bg-light-gray-color),$dark-primary-color)
+            @include button-styles($light-background-color,$dark-primary-color)
             display: flex
             justify-content: center
             align-items: center
@@ -172,6 +179,21 @@ ul
         display: flex
         gap: 40px
         cursor: pointer
+        .content__social-icon
+            width: 45px
+            height: 45px
+            background-color: $light-background-color
+            border-radius: 50%
+            position: relative
+            &:hover
+                box-shadow: 0 0 5px 3px #aaaaaa
+                transition: 0.3s ease
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+
 
 //second page
 
@@ -180,6 +202,7 @@ ul
     padding: 5rem 0
     
     background-color: var(--main-bg-light-gray-color)
+    color: var(--main-text-color)
 
 .container
     max-width: 1148px
@@ -213,14 +236,15 @@ ul
         cursor: pointer
     .container__left-btn
         margin-top: 40px
-        @include button-styles($blue-button-color,var(--main-bg-color))
+        @include button-styles($blue-button-color,$light-primary-color)
 
 
 // application
 
 .application
     margin-bottom: 2rem
-    background-color: var(--main-bg-color)    
+    background-color: var(--main-bg-color)  
+    color: var(--main-text-color)  
     display: flex
     flex-direction: column
     align-items: center
@@ -239,7 +263,7 @@ ul
                 width: 50px
                 height: 50px
                 border-radius: 50%
-                box-shadow: 0 0 5px 5px var(--main-bg-light-gray-color)
+                box-shadow: 0 0 5px 5px $light-background-color
                 position: relative
                 &:hover
                     box-shadow: 0 0 5px 5px #e2e2e2
@@ -253,7 +277,7 @@ ul
 
     button
         width: 80%
-        background-color: var(--main-bg-light-gray-color)
+        background-color: $light-background-color
         border: none
         border-radius: 45px
         padding: 8px 0
@@ -267,6 +291,7 @@ ul
 .footer
     
     background-color: var(--main-bg-light-gray-color)
+    color: var(--main-text-color)
     display: flex
     justify-content: center
     align-items: center
@@ -282,7 +307,7 @@ ul
             cursor: pointer
         .footer__right
             button
-                @include button-styles($blue-button-color,var(--main-bg-color))
+                @include button-styles($blue-button-color,$light-primary-color)
                 &:hover
                     @include button-hover()
                     
