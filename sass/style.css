@@ -28,11 +28,19 @@ header {
 }
 
 .navbar {
+  width: 100%;
   background-color: var(--navbar-color);
-  padding: 24px 140px;
   max-height: 88px;
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__header {
+  flex-basis: 85%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -56,6 +64,7 @@ ul {
 }
 
 .hamburger {
+  width: 100%;
   display: none;
 }
 
@@ -63,7 +72,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 200px;
 }
 
 .hamburger__right {
@@ -206,6 +214,15 @@ ul {
   background-color: var(--main-bg-color);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.container__child .container__right {
+  width: 100%;
+}
+.container__child .container__right img {
+  width: 100% w;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container__left {
@@ -242,6 +259,7 @@ ul {
 }
 .container__left .container__left-skills {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
   cursor: pointer;
 }
@@ -281,7 +299,7 @@ ul {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  box-shadow: 0 0 5px 5px #F4F6FB;
+  box-shadow: 0 0 10px 3px #F4F6FB;
   position: relative;
 }
 .application .application__details .application__content .application__content-image:hover {
