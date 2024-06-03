@@ -14,10 +14,10 @@ icon.addEventListener("click", function(event) {
     document.body.classList.toggle("dark-theme");
 
     if(document.body.classList.contains("dark-theme")){
-        icon.src = "./assets/dark-mode.png"
+        icon.src = "./assets/sun.png"
     }
     else{
-        icon.src = "./assets/sun.png"
+        icon.src = "./assets/dark-mode.png"
     }
 });
 

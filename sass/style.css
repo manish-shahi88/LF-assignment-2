@@ -212,15 +212,14 @@ ul {
 
 .container__child {
   background-color: var(--main-bg-color);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .container__child .container__right {
   width: 100%;
 }
 .container__child .container__right img {
-  width: 100% w;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -413,13 +412,14 @@ ul {
     gap: 20px;
   }
   .container__child {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
   .container__child .container__left {
     background-color: #050519;
   }
   .section {
     width: 100%;
+    padding: 0;
   }
   .section .container .container__child .container__right img {
     width: 100%;
