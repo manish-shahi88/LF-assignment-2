@@ -20,9 +20,9 @@
                     <img src="./assets/logo.png" alt="">
                 </div>
                 <ul class="navbar__menu">
-                    <li class="navbar__item"><a class="navbar__link" href="">About</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="">Work</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="">Contact</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#about">About</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#work">Work</a></li>
+                    <li class="navbar__item"><a class="navbar__link" href="#contact">Contact</a></li>
                     <li class="navbar__item"><a class="navbar__link" href=""><img id="icon" src="./assets/dark-mode.png" alt=""></a></li>
                 </ul> 
             <!-- Hamburger Menu -->
@@ -64,21 +64,27 @@
                     </button>
                 </div>
                 <div class="content__social-links">
-                    <div class="content__social-icon"><img src="./assets/linkedin-icon.png" alt="linkedin"></div>
-                    <div class="content__social-icon"><img src="./assets/insta-icon.png" alt="instagram"></div>
-                    <div class="content__social-icon"><img src="./assets/download.png" alt="dribble"></div>
-                    <div class="content__social-icon"><img src="./assets/github-icon.png" alt="github"></div>
+                    <div class="content__social-icon"><a href=""><img src="./assets/linkedin-icon.png" alt="linkedin"></a></div>
+                    <div class="content__social-icon"><a href=""><img src="./assets/insta-icon.png" alt="instagram"></a></div>
+                    <div class="content__social-icon"><a href=""><img src="./assets/dribble-icon.png" alt="dribble"></a></div>
+                    <div class="content__social-icon"><a href=""><img src="./assets/git-icon.png" alt="github"></a></div>
                 </div>
+                <!-- <div class="content__social-links-dark">
+                    <div class="content__social-icon"><a href=""><img src="./assets/linkedin-icon-dark.png" alt="linkedin"></a></div>
+                    <div class="content__social-icon"><a href=""><img src="./assets/insta-icon-dark.png" alt="instagram"></a></div>
+                    <div class="content__social-icon"><a href=""><img src="./assets/dribble-icon-dark.png" alt="dribble"></a></div>
+                    <div class="content__social-icon"><a href=""><img src="./assets/git-icon-dark.png" alt="github"></a></div>
+                </div> -->
             </div>
         </div>
     </header>
     
     <!-- body section one -->
-    <section class="section">
+    <section id="about" class="section">
         <div class="container">
             <div class="container__child">
                 <div class="container__left">
-                    <button style="background-color: #F4F6FB;">
+                    <button class="container__left-top-btn">
                         <img src="./assets/marketplace.png" alt="marketplace">
                         Marketplace
                     </button>
@@ -124,7 +130,7 @@
         <div class="container">
             <div class="container__child">
                 <div class="container__left">
-                    <button style="background-color: #F4F6FB;">
+                    <button class="container__left-top-btn">
                         <img src="./assets/ticket-mini.png" alt="ticket">
                         Ticketing
                     </button>
@@ -161,7 +167,7 @@
         <div class="container">
             <div class="container__child">
                 <div class="container__left">
-                    <button style="background-color: #F4F6FB;">
+                    <button class="container__left-top-btn">
                         <img src="./assets/health icon.png" alt="marketplace">
                         Health
                     </button>
@@ -195,51 +201,70 @@
     </section>
 
    
-    <section class="application">
+    <section id="work" class="application">
         <h1 class="application__title">Applications and Tools</h1>
         <div class="application__details">
-            <div class="application__content">
-                <div class="application__content-image">
-                    <img src="./assets/1.png" alt="application icon">
+
+            <div class="application__details-row">
+                <div class="application__content">
+                    <div class="application__content-image">
+                        <img src="./assets/app-figma.svg" alt="application icon">
+                    </div>
+                    <p class="application__content-title">Figma</p>
+                    <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
                 </div>
-                <p class="application__content-title">Figma</p>
-                <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
-            </div>
-            <div class="application__content">
-                <div class="application__content-image">
-                    <img src="./assets/2.png" alt="application icon">
+                <div class="line-block"></div>
+
+                <div class="application__content">
+                    <div class="application__content-image">
+                        <img src="./assets/app-whimsical.svg" alt="application icon">
+                    </div>
+                    <p class="application__content-title">Whimsical</p>
+                    <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
                 </div>
-                <p class="application__content-title">Whimsical</p>
-                <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
-            </div>
-            <div class="application__content">
-                <div class="application__content-image">
-                    <img src="./assets/3.png" alt="application icon">
+                <div class="line-block"></div>
+
+                <div class="application__content">
+                    <div class="application__content-image">
+                        <img src="./assets/app-invision.svg" alt="application icon">
+                    </div>
+                    <p class="application__content-title">Invision</p>
+                    <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
                 </div>
-                <p class="application__content-title">Invision</p>
-                <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
+                <div class="line-block"></div>
+
             </div>
-            <div class="application__content">
+            <div class="line"></div>
+            <div class="application__details-row">
+               <div class="application__content">
                 <div class="application__content-image">
-                    <img src="./assets/4.png" alt="application icon">
+                    <img src="./assets/app-flutter.svg" alt="application icon">
                 </div>
                 <p class="application__content-title">Flutter</p>
                 <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
             </div>
+            <div class="line-block"></div>
+
             <div class="application__content">
                 <div class="application__content-image">
-                    <img src="./assets/5.png" alt="application icon">
+                    <img src="./assets/app-vscode.svg" alt="application icon">
                 </div>
                 <p class="application__content-title">VS Code</p>
                 <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
             </div>
+            <div class="line-block"></div>
+
             <div class="application__content">
-                <div class="application__content-image">
-                    <img src="./assets/6.png" alt="application icon">
+                <div class="application__content-image image__container--git">
+                    <a href=""><img class="relative-img" src="./assets/gitlab-icon-2.png" alt="application icon"></a>
+                    <a href=""><img class="absolute-img" src="./assets/app-git-backward.svg" alt="application icon"></a>
                 </div>
                 <p class="application__content-title">Git</p>
                 <p class="application__content-description">My primary design tool right now.Saya memilih mengunakan figma karena depat bekarja dengan tim.</p>
             </div>
+            </div>
+
+            
         </div>
         <button>Load More Applications and Tools</button>
 
@@ -250,11 +275,16 @@
 
     <!-- footer section -->
     
-        <footer class="footer">
+        <footer id="contact" class="footer">
             <div class="footer__container">
                 <div class="footer__left">
-                    <h1 class="footer__left-title">Let's get in touch</h1>
-                    <p class="footer__left-description">For business inquiry please send email to nanangprasetya.2000@gmail.com</p>
+                    <div class="footer__left-up">
+                        <h1 class="footer__left-title">Let's get in touch</h1>
+                        <p class="footer__left-description">For business inquiry please send email to nanangprasetya.2000@gmail.com</p>
+                    </div>
+                    <button>SAY HELLO</button>                
+                </div>
+                <div class="footer__right">
                     <div class="footer__left-social-links">
                         <div>
                             <img src="./assets/linkedin-footer.png" alt="linkedin">
@@ -269,9 +299,6 @@
                             <img src="./assets/github-footer.png" alt="github">
                         </div>
                     </div>
-                </div>
-                <div class="footer__right">
-                    <button>SAY HELLO</button>
                 </div>
             </div>
             
